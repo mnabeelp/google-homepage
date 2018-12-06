@@ -1,34 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Google</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+  <title>Google</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <ul>
-    <li><a href="#Gmail">Gmail</a></li>
-    <li><a href="#Images">Images</a></li>
-  </ul>
-        
-  <div class="content" id="main">
+  <nav id="header" class="navbar" style="color:white;outline-color:white">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Gmail" style="color:black">Gmail</a></li>
+        <li><a href="#Images" style="color:black">Images</a></li>
+        <li><a href="#Apps"><span class="glyphicon glyphicon-th" style="color:black"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-bell" style="color:black"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user" style="color:black"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content" style="justify-items:center" id="main">
     <span id="body">
-      <center>
-        <div style="height:233px;margin-top:89px">
-          <img width="272" height="92" style="padding-top:109px" alt="Google" src="images/googlelogo_color_272x92dp.png">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <div class="row" >
+              <div class="col-sm-3"></div>
+              
+              <div class="col-sm-6" style="height:233px;margin-top:89px">
+                <center>
+                <img width="272" height="92" alt="Google" src="/images/googlelogo_color_272x92dp.png" style="">
+                </center>
+              </div>
+            </div>
+
+          <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <form >
+              <center>
+              <div class="form-group">
+                <input class="form-control" id="inputdefault" type="text">
+                <br>
+                <button type="button" class="btn btn-default btn-align">Search Google</button>
+                <button type="button" class="btn btn-default">I'm Feeling Lucky</button>
+                                           
+              </div>
+              </center>
+            </form>
+          </div>
+
         </div>
-        <form>
-          <input maxlength="2048" type="text">
-          <br>
-          <button title="Search">Search</button>
-        </form>
-      </center>
+        <br>
+      </form>  
+  
     </span>
   </div>
 
-    
+
+  <nav id="footer" class="navbar navbar-fixed-bottom">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="#Advertising" style="color:black">Advertising</a></li>
+          <li><a href="#Business" style="color:black">Business</a></li>
+          <li><a href="#About" style="color:black" >About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Privacy" style="color:black" >Privacy</a></li>
+          <li><a href="#Terms" style="color:black" >Terms</a></li>
+          <li><a href="#Settings" style="color:black" >Settings</a></li>
+        </ul>
+      </div>
+    </nav>
 </body>
 </html>
